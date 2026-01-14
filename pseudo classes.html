@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-class Example</title>
+  <style>
+    /* Normal link style */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    /* Pseudo-class: when hovered */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* Pseudo-class: when visited */
+    a:visited {
+      color: rgba(11, 230, 11, 0.699);
+    }
+
+    /* Pseudo-class: when active (clicked) */
+    a:active {
+      color: rgb(165, 55, 55);
+    }
+  </style>
+</head>
+<body>
+  <h2>Pseudo-class Example</h2>
+  <p>Hover, click, or visit this link:</p>
+  <a href="https://www.example.com">Go to Example</a>
+</body>
+</html>

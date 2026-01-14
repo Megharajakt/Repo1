@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-element Example</title>
+  <style>
+    /* Style the first letter of a paragraph */
+    p::first-letter {
+      font-size: 3em;
+      color: red;
+      font-weight:bold;
+    }
+    /* Style the first line of a paragraph */
+    p::first-line {
+      color: blue;
+      text-transform: uppercase;
+    }
+
+    /* Add content before a heading */
+    h1::before {
+      content: "★ ";
+      color: gold;
+    }
+
+    /* Add content after a heading */
+    h1::after {
+      content: " ★";
+      color: rgb(255, 102, 0);
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-element Example</h1>
+  <h2>new element addes</h2>
+  <p>
+    This is a simple paragraph demonstrating pseudo-elements. 
+    Notice how the first letter and first line look different.
+  </p>
+</body>
+</html>
